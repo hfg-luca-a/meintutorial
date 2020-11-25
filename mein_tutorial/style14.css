@@ -30,10 +30,9 @@ p {
 }
 
 table{
-
-border: 5px;
-border-style: groove;
-background-color: lightgrey;
+    border: 5px;
+    border-style: groove;
+    background-color: lightgrey;
 }
 
 tr {
@@ -46,11 +45,10 @@ th {
     border-style: dotted;
     color: red;
     padding: 5px;
-    
-    
-}
+    }
 
 td {
     border: 2px;
     border-style: groove;
+
 }
