@@ -50,5 +50,11 @@ th {
 td {
     border: 2px;
     border-style: groove;
+}
 
+#merksatz {
+    background-color: white;
+    color: rgb(36, 35, 35);
+    font-weight: bold;
+    width: 500px;
 }
