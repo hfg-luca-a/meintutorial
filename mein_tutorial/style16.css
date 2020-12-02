@@ -1,9 +1,8 @@
 body {
-    background-color: green;
+  background-color: green;
 }
 p {
-
-    color: yellow;
-    background-color: grey;
-    font-weight: bold;
+  color: yellow;
+  background-color: grey;
+  font-weight: bold;
 }
