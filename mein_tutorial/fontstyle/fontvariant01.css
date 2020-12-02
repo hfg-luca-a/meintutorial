@@ -1,0 +1,9 @@
+.a {
+  font-variant: small-caps;
+}
+.b {
+  font-variant: initial;
+}
+.c {
+  font-variant: inherit;
+}
