@@ -1,0 +1,14 @@
+.freizeit {
+  font-style: italic;
+  color: rgb(130, 188, 240);
+}
+
+.arbeit {
+  color: grey;
+  font-style: italic;
+}
+
+.studium {
+  color: orange;
+  text-transform: uppercase;
+}
