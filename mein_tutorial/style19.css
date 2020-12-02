@@ -4,3 +4,10 @@
 #idselektor {
   color: red;
 }
+ul {
+  color: hotpink;
+}
+span {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: blue;
+}
