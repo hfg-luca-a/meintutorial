@@ -1,15 +1,29 @@
 .font18 {
   font-size: 18px;
 }
-.fontsans{
-	font-family: sans-serif;
+.fontsans {
+  font-family: sans-serif;
 }
-.fontserif{
-	font-family: serif;
+.fontserif {
+  font-family: serif;
 }
-.fontcursive{
-	font-family: cursive;
+.fontcursive {
+  font-family: cursive;
 }
-.fontmonospace{
-	font-family: monospace;
+.fontmonospace {
+  font-family: monospace;
+}
+
+@keyframes example {
+  from {
+    font-size: 20px;
+  }
+  to {
+    font-size: 200px;
+  }
+}
+#animatedspan {
+  animation-name: example;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
 }
