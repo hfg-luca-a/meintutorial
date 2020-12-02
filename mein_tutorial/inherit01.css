@@ -1,5 +1,8 @@
 span {
-    color: blue;
-    border: 1px solid black;
-  }
-  
+  color: blue;
+  border: 1px solid black;
+}
+.extra span {
+  color: inherit;
+  text-decoration: line-through;
+}
