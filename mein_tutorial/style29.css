@@ -1,0 +1,29 @@
+.button {
+  font: 12px sans-serif; /*Schriftfont*/
+  display: inline-block; /* Angabe zur horizontalen Anordnung*/
+  text-align: center; /* horizontale textausrichtung */
+  vertical-align: middle; /* vertikale textausrichtung*/
+  padding: 0.5rem 1rem; /* Innenabstand */
+  border-radius: 0.3rem; /* Definition Kantenrundng*/
+  color: #ffffff; /* textfarbe */
+  text-decoration: normal; /* text deko */
+  background-color: #aabbcc; /* hintergrundfarbe */
+  margin: 10px; /* aussenabstand */
+  transition: all 2s ease; /* fading - angabe like 0.5s */
+  text-decoration: none;
+}
+.hervor {
+  background-color: #ff8c00;
+}
+.warnung {
+  background-color: #ff6347;
+}
+.button:hover {
+  background-color: #000000;
+}
+.hervor:hover {
+  background-color: #c7902b;
+}
+.warnung:hover {
+  background-color: #ff1122;
+}
