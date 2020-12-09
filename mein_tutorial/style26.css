@@ -1,0 +1,18 @@
+.one {
+  width: 250px;
+  background-color: red;
+}
+
+.two {
+  width: 50%;
+  background-color: green;
+}
+
+.three {
+  width: 30%;
+  background-color: pink;
+}
+.contain {
+  width: 500px;
+  background-color: blue;
+}
