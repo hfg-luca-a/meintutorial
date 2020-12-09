@@ -3,3 +3,14 @@ nav ul {
   display: flex;
   list-style: none;
 }
+
+nav a {
+  font-family: sans-serif;
+  color: #646464;
+  background-color: #ffeedd;
+  text-decoration: none;
+  display: block;
+  padding: 20px;
+  border: 2px solid;
+
+}
