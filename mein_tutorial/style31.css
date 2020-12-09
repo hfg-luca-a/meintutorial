@@ -2,6 +2,10 @@ div > p {
     background-color: #bcf5db;
     border-style: dotted;
 }
+div p {
+
+    background-color: #bcf5db;
+}
 body{
 
     background-color: lightgrey;
