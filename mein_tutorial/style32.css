@@ -1,0 +1,10 @@
+div + p {
+  border: 1px dotted #ff0000;
+  border-top: 3px solid #ff0000;
+  border-right: 3px solid #ff0000;
+  margin-left: 150px;
+  width: 200px;
+}
+body {
+  background-color: lightgrey;
+}
