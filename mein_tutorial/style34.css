@@ -30,4 +30,5 @@ pre {
 }
 .clearfix {
   overflow: auto;
+  overflow: hidden;
 }
