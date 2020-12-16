@@ -1,0 +1,14 @@
+div {
+  background-color: red;
+  border: 5px solid green;
+  width: 250px;
+  height: 150px;
+}
+
+html {
+  background-color: lightblue;
+}
+
+pre {
+  display: inline;
+}
