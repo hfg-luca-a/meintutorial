@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Luca Albanesi</title>
+    <meta charset="utf-8" />
+  </head>
+  <body>
+  <h4>ID (#demo)</h4>
+	<div id="demo">Acess me by ID</div>		<!-- definition eines div mit ID "demo" -->	
+	<p> <button onclick="border()">Border</button> <!-- definition der buttons -->
+	<button onclick="background()">Background</button> </p>
+	<script>
+		// weist der variablen demoID das Element demo zu 
+		var demoID = document.getElementById("demo");
+		document.write("<br/>demo ID: "+demoID); // object HTMLDivElement
+		//deklaration funktionen
+		function border() 
+			{
+				demoID.style.border = "1px solid red";	// zeigt einen roten Ramen an
+			}
+		function background() 
+			{
+				demoID.style.background = "lightgreen";	// faerbt hintergrund gruen
+			}
+	</script>
+  </body>
+</html>

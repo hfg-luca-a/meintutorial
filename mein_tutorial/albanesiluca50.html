@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Luca Albanesi</title>
+    <meta charset="utf-8" />
+    <script>
+      // Definition des neuen Textes, der ausgetauscht werden soll
+      var neu = "hier steht ein neuer Text!";
+      function aendern() {
+        //Adressierung des Objektes, das geaendert werden soll und Zuweisung neuer Inhalt
+        document.getElementById("meinAbsatz").innerText = neu;
+      }
+    </script>
+  </head>
+  <body>
+    <p>Aendern eines Textes (HTML Element mit ID) via mouseclick</p>
+    <!-- Ursprungstext und Defintion der id -->
+    <p id="meinAbsatz">Guten Tag!</p>
+    <!-- Aufruf der funktion aendern via javascript -->
+    <a href="javascript:aendern()">Change Text now!</a>
+  </body>
+</html>
