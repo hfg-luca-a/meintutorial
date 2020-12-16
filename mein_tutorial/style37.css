@@ -9,12 +9,21 @@ div {
   display: inline;
 }
 .myblock {
+  background-color: yellow;
+  display: block;
+}
+.mycontents {
+  display: contents;
+  background-color: yellow;
+  border: 5px solid blue;
+}
+.myflex {
+  display: flex;
+  background-color: yellow;
+}
+.myinlineblock{
+    display: inline-block;
     background-color: yellow;
-    display: block;
-  }
-.mycontents{
-display: contents;
-background-color: yellow;
-border: 5px solid blue;
+    height: 50px;
 
 }
