@@ -24,3 +24,10 @@ pre {
   margin: 0 auto;
   width: 250px;
 }
+.rechts {
+  position: absolute;
+  right: 0px;
+}
+.clearfix {
+  overflow: auto;
+}
