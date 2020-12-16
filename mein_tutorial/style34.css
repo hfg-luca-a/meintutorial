@@ -16,3 +16,12 @@ pre {
 .zerntriert {
   margin: 0 auto;
 }
+.textzerntireren {
+  text-align: center;
+}
+.bildzentrieren {
+  display: block;
+  margin: 0 auto;
+  width: 250px;
+  height: 150px;
+}
