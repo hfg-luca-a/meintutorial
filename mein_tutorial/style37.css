@@ -21,9 +21,8 @@ div {
   display: flex;
   background-color: yellow;
 }
-.myinlineblock{
-    display: inline-block;
-    background-color: yellow;
-    height: 50px;
-
+.myinlineblock {
+  display: inline-block;
+  background-color: yellow;
+  height: 50px;
 }
