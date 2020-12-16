@@ -38,5 +38,9 @@ pre {
 }
 .clearfix {
   overflow: auto;
-  
+}
+.mittig {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
