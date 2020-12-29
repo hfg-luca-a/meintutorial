@@ -8,7 +8,7 @@ h1 {
 
 hr {
   animation: fadeIn 2s ease-out;
-  width: 50%;
+  width: 40%;
   text-align: left;
   margin: 10 auto;
   color: darkgray;
@@ -25,7 +25,7 @@ hr {
 
 .linkboxen {
   border-radius: 5px;
-  width: 50%;
+  width: 40%;
   background-color: lightgrey;
   margin: 0 auto;
   padding: 10px;
@@ -45,11 +45,12 @@ hr {
 
 .linkboxen:hover {
   border: 3px solid lightskyblue;
-  animation: backdarktextwhite 2s ease-in-out;
+ /* animation: backdarktextwhite 2s ease-in-out;
   animation-fill-mode: forwards;
+  */
 }
 
-@keyframes backdarktextwhite {
+/*@keyframes backdarktextwhite {
   0% {
     background-color: lightgrey;
     color: black;
@@ -60,6 +61,7 @@ hr {
     background-color: black;
   }
 }
+*/
 
 .movingautor {
   border: 2px darkgray solid;
@@ -126,4 +128,23 @@ ul{
   text-align: left;
   padding: 10px;
   margin: 0px;
+}
+
+p a{
+
+  color: lightcoral;
+}
+
+a button {
+  font-family: "Roboto", sans-serif;
+  margin-left: 20px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  border: none;
+  width: 100px;
+  height: 30px;
+}
+a button:hover {
+  border: 2px solid grey;
+  font-weight: bold;
 }
