@@ -1,5 +1,5 @@
 body {
-  background-color: lightgray;
+  background-color: white;
   font-family: "Roboto", sans-serif;
 }
 h1 {
@@ -11,7 +11,7 @@ hr {
   width: 50%;
   text-align: left;
   margin: 10 auto;
-  color: blue;
+  color: darkgray;
 }
 
 @keyframes fadeIn {
@@ -24,8 +24,9 @@ hr {
 }
 
 .linkboxen {
+  border-radius: 5px;
   width: 50%;
-  background-color: grey;
+  background-color: lightgrey;
   margin: 0 auto;
   padding: 10px;
   text-overflow: ellipsis;
@@ -43,14 +44,14 @@ hr {
 }
 
 .linkboxen:hover {
-  border: 3px solid red;
+  border: 3px solid lightskyblue;
   animation: backdarktextwhite 2s ease-in-out;
   animation-fill-mode: forwards;
 }
 
 @keyframes backdarktextwhite {
   0% {
-    background-color: grey;
+    background-color: lightgrey;
     color: black;
   }
 
@@ -119,4 +120,10 @@ hr {
     color: rgb(255, 0, 127);
     
   }
+}
+
+ul{
+  text-align: left;
+  padding: 10px;
+  margin: 0px;
 }
