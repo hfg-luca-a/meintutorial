@@ -37,6 +37,10 @@ hr {
   width: 50%;
   margin: 0 auto;
 }
+.headbar:hover {
+  animation: rainbow 2.5s ease-in-out;
+  animation-iteration-count: infinite;
+}
 
 .linkboxen:hover {
   border: 3px solid red;
@@ -57,12 +61,17 @@ hr {
 }
 
 .movingautor {
+  border: 2px darkgray solid;
   text-align: center;
-  background-color: red;
+  background-color: grey;
   width: 200px;
-  height: 100px;
+  height: 35%;
   position: fixed;
   left: 10;
+}
+.movingautor:hover{
+
+  font-size: 20px;
 }
 
 .rainbow {
@@ -74,6 +83,7 @@ hr {
   100%,
   0% {
     color: rgb(255, 0, 0);
+    
   }
   8% {
     color: rgb(255, 127, 0);
@@ -107,5 +117,6 @@ hr {
   }
   91% {
     color: rgb(255, 0, 127);
+    
   }
 }
