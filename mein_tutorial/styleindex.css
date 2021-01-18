@@ -187,3 +187,14 @@ a button:hover {
 .funkybtn:hover {
   border: 2px solid gray;
 } /*----------------------------------*/
+
+.footer {
+  margin-top: 50px;
+  text-align: center;
+  font-family: "Work Sans", sans-serif;
+  font-size: 13px;
+}
+.footer p {
+  display: inline;
+  margin: 10px;
+}

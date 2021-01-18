@@ -1,119 +1,208 @@
 <!DOCTYPE html>
 <html>
-
-<head>
+  <head>
     <title>Luca Albanesi DNS</title>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="author" content="Luca Albanesi" />
     <meta name="keywords" content="HTML, DNS" />
-    <meta name="description" content="In diesem Beitrag geht es um DNS - Domain Name System" />
-    <link rel="stylesheet" href="style_dns.css">
-</head>
+    <meta
+      name="description"
+      content="In diesem Beitrag geht es um DNS - Domain Name System"
+    />
+    <link rel="stylesheet" href="style_dns.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Work+Sans&display=swap"
+      rel="stylesheet"
+    />
+  </head>
 
-<body style="background-color: lightgray;">
-    <h1 style="text-align: center" id="ueberschrift">DNS - Domain Name System </h1>
-    <h4 style="text-align: center">Luca Albanesi</h4>
-    <p>
-    <h2>Definition</h2>
-    <a>DNS steht für Domain Name System. Dieses System ist vergleichbar mit einer Telefonauskunft,<br>
-        man frägt an wo sich etwas befindet und bekommt eine beschreibung wie man dort hinkommt.</a>
-    </p>
-    <p>
-    <h2>Was ist die genaue Aufgabe eines Domain Name Systems?</h2>
-    <a>Hauptsächlich wird das DNS zur Umsetzung von Domainnamen in IP-Adressen benutzt.<br>
-        Dies ist vergleichbar mit einem Telefonbuch, das die Namen der Teilnehmer in ihre Telefonnummer auflöst.<br>
-        Das DNS bietet somit eine Vereinfachung, weil Menschen sich Namen weitaus besser merken können als
-        Zahlenketten.<br>
-        So kann man sich einen Domainnamen wie example.org in der Regel leichter merken als die dazugehörende IP-Adresse
-        192.0.32.10.<br>
-        Dieser Punkt gewinnt im Zuge der Einführung von IPv6 noch mehr an Bedeutung, denn dann werden einem Namen
-        jeweils IPv4- und IPv6-Adressen zugeordnet. <br>
-    </a>
-        </p>
-    <h2>Die DNS Server welche man passiert wenn man eine Website laden möchte.</h2>
-
-    <ol>
-        <li><a>DNS-Recurser: Der DNS-Recursor ist der Server, der auf eine DNS-Anfrage antwortet<br>
-                und einen anderen DNS-Server nach der Adresse fragt oder bereits die IP-Adresse der Website
-                abgespeichert hat.</a></li> <br>
-        <li><a>Root-Name-Server: Ein Root-Names-Server ist der Name-Server für die Root-Zone.<br>
-                Er reagiert auf direkte Anfragen und kann eine Liste der autoritativen Name-Server für die entsprechende
-                Top-Level-Domain zurückgeben.</a></li><br>
-        <li><a>TLD-Name-Server: Der Top-Level-Domain-Server (TLD) gehört zu den High-Level-DNS-Servern im Internet.<br>
-                Wenn nach www.hfg-gmuend.de gesucht wird, antwortet zuerst ein TLD-Server für „.com“.<br>
-                Danach sucht DNS nach "hfg-gmuend".</a></li><br>
-        <li><a>Autoritativer Name-Server: Der autoritative Nameserver ist die Endstation einer DNS-Abfrage.<br>
-                Auf dem autoritativen Name-Server liegt der DNS-Eintrag für die Anfrage.</a></li><br>
-    </ol>
-
-    </p>
-    <div>
-    <h2>Arten von DNS-Diensten</h2>
-    <p>
-    <ol>
-        <a>Es gibt zwei verschiedene Arten von DNS-Diensten im Internet.<br>
-            Jeder dieser Dienste handhabt DNS-Abfragen je nach Funktion unterschiedlich.</a> <br><br>
-        <li><a>Rekursiver DNS-Resolver:<br> Ein rekursiver DNS-Resolver ist der DNS-Server,<br>
-                der auf die DNS-Abfrage reagiert und nach dem autoritativen Nameserver oder einem zwischengespeicherten
-                <br>
-                DNS-Ergebnis für den angeforderten Namen sucht.</a></li> <br>
-        <li><a>Autoritativer DNS-Server:<br> Ein autoritativer DNS-Server speichert die DNS-Anfrage.<br>
-                Wenn Sie also einen autoritativen DNS-Server nach einer seiner IP-Adressen fragen, muss er nicht bei
-                einem anderen Server nachfragen.<br>
-                Der autoritative Name-Server ist die letzte Instanz für diese Namen und IP-Adressen.</a></li><br>
-    </ol>
-    </p>
+  <body background="images\dnsbg.png"> <!--Hintergrund des Bodys wird als Bild definiert-->
+    <div class="header">
+      <h1 id="ueberschrift">DNS - Domain Name System</h1>
     </div>
-    <h2>Arten von DNS-Abfragen</h2>
-    <p>
-    <ol>
-        <a>DNS-Abfragen sind der Computercode, der den DNS-Servern mitteilt, um welche Art von Anfrage es sich handelt
-            und welche Informationen abgefragt werden sollen.<br>
-            Bei einem normalen DNS-Lookup gibt es drei grundlegende DNS-Anfragen.</a> <br><br>
-        <li><a>Rekursive Anfrage:<br>
-                Bei einer rekursiven Anfrage fordert der Computer<br> eine IP-Adresse oder die Bestätigung an, dass der
-                DNS-Server diese IP-Adresse nicht kennt.</a></li><br>
-        <li><a>Iterative Anfrage:<br>
-                Bei einer iterativen Anfrage möchte der Antragsteller vom DNS-Server die bestmögliche Antwort.<br>
-                Wenn der DNS-Server die IP-Adresse nicht selbst hat, gibt er den autoritativen Name-Server oder
-                TLD-Name-Server zurück.<br>
-                Der Antragsteller setzt diesen iterativen Prozess fort, bis er eine Antwort findet oder die Anfragezeit
-                überschritten wird.</a></li><br>
-        <li><a>Nicht rekursive Anfrage:<br>
-                Ein DNS-Resolver verwendet diese Anfrage, um eine IP-Adresse aufzulösen, die er nicht in seinem Cache
-                findet.<br>
-                Von derartigen Anfragen darf immer nur eine laufen, um die Beanspruchung der Netzwerkbandbreite zu
-                begrenzen.</a></li><br>
-    </ol>
-    </p>
-    <h2>Schwächen und Sicherheitslücken von DNS</h2>
-    <p>
-    <ol>
-        <li><a>Interne DNS-Server speichern alle Servernamen und IP-Adressen für ihre Domains und geben sie an jeden
-                weiter, der danach fragt.<br>
-                Deshalb ist DNS eine großartige Informationsquelle für Angreifer bei dem Versuch, ein System intern
-                auszuspähen.</a></li><br>
-        <li><a>DNS-Caches sind nicht „autoritativ” und können manipuliert werden.<br>
-                Wenn Ihr DNS-Server mit falschen Datensätzen „vergiftet“ wird, können Computer dahingehend überlistet
-                werden, falsche Adressen aufzurufen.</a></li><br>
-        <li><a>DNS leitet Anfragedaten von internen Arbeitsplätzen an externe Server weiter, und Angreifer haben
-                gelernt,<br>
-                wie man dieses Verhalten nutzt, um „verdeckte Kanäle“ für die Exfiltration von Daten einzurichten.</a><br>
+    <div class="centerdiv">
+      <h2>Definition</h2>
+      <ol>
+        <a
+          >DNS steht für Domain Name System. Dieses System ist vergleichbar mit
+          einer Telefonauskunft, man frägt an wo sich etwas befindet und bekommt
+          eine beschreibung wie man dort hinkommt.</a
+        >
+      </ol>
+    </div>
+    <hr>
+    <div class="centerdiv">
+      <h2>Was ist die genaue Aufgabe eines Domain Name Systems?</h2>
+      <ol>
+        <a
+          >Hauptsächlich wird das DNS zur Umsetzung von Domainnamen in
+          IP-Adressen benutzt. Dies ist vergleichbar mit einem Telefonbuch, das
+          die Namen der Teilnehmer in ihre Telefonnummer auflöst. Das DNS bietet
+          somit eine Vereinfachung, weil Menschen sich Namen weitaus besser
+          merken können als Zahlenketten. So kann man sich einen Domainnamen wie
+          example.org in der Regel leichter merken als die dazugehörende
+          IP-Adresse 192.0.32.10. Dieser Punkt gewinnt im Zuge der Einführung
+          von IPv6 noch mehr an Bedeutung, denn dann werden einem Namen jeweils
+          IPv4- und IPv6-Adressen zugeordnet.
+        </a>
+      </ol>
+    </div>
+    <hr>
+    <div class="centerdiv">
+      <h2>
+        Die DNS Server welche man passiert wenn man eine Website laden möchte.
+      </h2>
+
+      <ol>
+        <li>
+          <a
+            >DNS-Recurser: Der DNS-Recursor ist der Server, der auf eine
+            DNS-Anfrage antwortet und einen anderen DNS-Server nach der Adresse
+            fragt oder bereits die IP-Adresse der Website abgespeichert hat.</a
+          >
         </li>
-
-
-    </ol>
-
-
-
-    </p>
-
-
-
-
-
-
-</body>
-
+        <br />
+        <li>
+          <a
+            >Root-Name-Server: Ein Root-Names-Server ist der Name-Server für die
+            Root-Zone. Er reagiert auf direkte Anfragen und kann eine Liste der
+            autoritativen Name-Server für die entsprechende Top-Level-Domain
+            zurückgeben.</a
+          >
+        </li>
+        <br />
+        <li>
+          <a
+            >TLD-Name-Server: Der Top-Level-Domain-Server (TLD) gehört zu den
+            High-Level-DNS-Servern im Internet. Wenn nach www.hfg-gmuend.de
+            gesucht wird, antwortet zuerst ein TLD-Server für „.de“. Danach
+            sucht DNS nach "hfg-gmuend".</a
+          >
+        </li>
+        <br />
+        <li>
+          <a
+            >Autoritativer Name-Server: Der autoritative Nameserver ist die
+            Endstation einer DNS-Abfrage. Auf dem autoritativen Name-Server
+            liegt der DNS-Eintrag für die Anfrage.</a
+          >
+        </li>
+      </ol>
+    </div>
+    <hr>
+    <div class="centerdiv">
+      <h2>
+        Es gibt zwei verschiedene Arten von DNS-Diensten im Internet. Jeder
+        dieser Dienste handhabt DNS-Abfragen je nach Funktion unterschiedlich.
+      </h2>
+      <ol>
+        <li>
+          <a
+            >Rekursiver DNS-Resolver:<br />
+            Ein rekursiver DNS-Resolver ist der DNS-Server, der auf die
+            DNS-Abfrage reagiert und nach dem autoritativen Nameserver oder
+            einem zwischengespeicherten DNS-Ergebnis für den angeforderten Namen
+            sucht.</a
+          >
+        </li>
+        <br />
+        <li>
+          <a
+            >Autoritativer DNS-Server:<br />
+            Ein autoritativer DNS-Server speichert die DNS-Anfrage. Wenn Sie
+            also einen autoritativen DNS-Server nach einer seiner IP-Adressen
+            fragen, muss er nicht bei einem anderen Server nachfragen. Der
+            autoritative Name-Server ist die letzte Instanz für diese Namen und
+            IP-Adressen.</a
+          >
+        </li>
+      </ol>
+    </div>
+    <hr>
+    <div class="centerdiv">
+      <h2>
+        DNS-Abfragen sind der Computercode, der den DNS-Servern mitteilt, um
+        welche Art von Anfrage es sich handelt und welche Informationen
+        abgefragt werden sollen. Bei einem normalen DNS-Lookup gibt es drei
+        grundlegende DNS-Anfragen.
+      </h2>
+      <ol>
+        <li>
+          <a
+            >Rekursive Anfrage:<br />
+            Bei einer rekursiven Anfrage fordert der Computer eine IP-Adresse
+            oder die Bestätigung an, dass der DNS-Server diese IP-Adresse nicht
+            kennt.</a
+          >
+        </li>
+        <br />
+        <li>
+          <a
+            >Iterative Anfrage:<br />
+            Bei einer iterativen Anfrage möchte der Antragsteller vom DNS-Server
+            die bestmögliche Antwort. Wenn der DNS-Server die IP-Adresse nicht
+            selbst hat, gibt er den autoritativen Name-Server oder
+            TLD-Name-Server zurück. Der Antragsteller setzt diesen iterativen
+            Prozess fort, bis er eine Antwort findet oder die Anfragezeit
+            überschritten wird.</a
+          >
+        </li>
+        <br />
+        <li>
+          <a
+            >Nicht rekursive Anfrage:<br />
+            Ein DNS-Resolver verwendet diese Anfrage, um eine IP-Adresse
+            aufzulösen, die er nicht in seinem Cache findet. Von derartigen
+            Anfragen darf immer nur eine laufen, um die Beanspruchung der
+            Netzwerkbandbreite zu begrenzen.</a
+          >
+        </li>
+      </ol>
+    </div>
+    <hr>
+    <div class="centerdiv">
+      <h2>Schwächen und Sicherheitslücken von DNS</h2>
+      <ol>
+        <li>
+          <a
+            >Interne DNS-Server speichern alle Servernamen und IP-Adressen für
+            ihre Domains und geben sie an jeden weiter, der danach fragt.
+            Deshalb ist DNS eine großartige Informationsquelle für Angreifer bei
+            dem Versuch, ein System intern auszuspähen.</a
+          >
+        </li>
+        <br />
+        <li>
+          <a
+            >DNS-Caches sind nicht „autoritativ” und können manipuliert werden.
+            Wenn Ihr DNS-Server mit falschen Datensätzen „vergiftet“ wird,
+            können Computer dahingehend überlistet werden, falsche Adressen
+            aufzurufen.</a
+          >
+        </li>
+        <br />
+        <li>
+          <a
+            >DNS leitet Anfragedaten von internen Arbeitsplätzen an externe
+            Server weiter, und Angreifer haben gelernt, wie man dieses Verhalten
+            nutzt, um „verdeckte Kanäle“ für die Exfiltration von Daten
+            einzurichten.</a
+          ><br />
+        </li>
+      </ol>
+    </div>
+    <div class="footer">
+      <p>Email: luca@blumen-maechtlen.de | luca.albanesi@hfg-gmuend.de</p>
+      <p class="alignright">Datum: <span id="datum"></span></p>
+      <!--Span wird durch js beschrieben und bekommt den aktuellen Zeitpunkt-->
+      <p>
+        GitHub:
+        <a href="https://github.com/hfg-luca-a/meintutorial" target="blank"
+          >https://github.com/hfg-luca-a/meintutorial</a
+        >
+      </p>
+    </div>
+    <script src="autor.js"></script> <!--Funktion wird von auto.js übernommen-->
+  </body>
 </html>

@@ -339,12 +339,27 @@
         <p>
           Hier gehts zur Datei albanesiluca_dns.html
           <a href="albanesiluca_dns.html"><button>Click!</button></a><br />
-          <a>Schlagwörter: Was ist DNS? </a>
+          <a>Schlagwörter: Was ist DNS? </a><br><br>
+          <a>Quellen: <a href="https://open-telekom-cloud.com/de/produkte-services/domain-name-service?wt_mc=sk_z_14_tsi-otc_10636646839_105169495836_451044674571_"> <ol>https://open-telekom-cloud.com/</ol></a>
+          <a href="https://blog.varonis.de/was-dns-ist-wie-es-funktioniert-und-schwachstellen/"> <ol>https://blog.varonis.de/</ol></a>
+          <a href="https://aws.amazon.com/de/route53/what-is-dns/"> <ol>https://aws.amazon.com/</ol></a>
+          <a href="https://www.elektronik-kompendium.de/sites/net/0901141.htm"> <ol>https://www.elektronik-kompendium.de/</ol></a></a>
         </p>
       </ul>
     </div>
-    <button class="funkybtn" onclick="enableFunk()">Get Funky</button> <!--Ein kleines "Easter Egg" wenn man das so nennen möchte | aktiviert enableFunk()-->
-
+    <div class="footer">
+      <p>Email: luca@blumen-maechtlen.de | luca.albanesi@hfg-gmuend.de</p>
+      <p class="alignright">Datum: <span id="datum"></span></p>
+      <!--Span wird durch js beschrieben und bekommt den aktuellen Zeitpunkt-->
+      <p>
+        GitHub:
+        <a href="https://github.com/hfg-luca-a/meintutorial" target="blank"
+          >https://github.com/hfg-luca-a/meintutorial</a
+        >
+      </p>
+      <button class="funkybtn" onclick="enableFunk()">Get Funky</button> <!--Ein kleines "Easter Egg" wenn man das so nennen möchte | aktiviert enableFunk()-->
+    </div>
+    <script src="autor.js"></script> <!--Funktion wird von auto.js übernommen-->
     <script>
       function enableFunk() {       // da alle Elemente theoretisch die gleiche Animation bekommt starte ich diese Animation Zeitversetzt
         $("body").addClass("rainbowbg");
