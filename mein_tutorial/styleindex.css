@@ -5,7 +5,7 @@ body {
 h1 {
   font-size: 80px;
 }
-
+/*Die trennleisten fahren sich aus */
 hr {
   animation: fadeIn 2s ease-in-out;
   width: 40%;
@@ -25,46 +25,31 @@ hr {
     width: 40%;
   }
 }
-
+/*------------------------------------*/
+.headbar {
+  text-align: center;
+  width: 50%;
+  margin: 0 auto;
+}
+/*Rainbow effekt bei Hover*/
+.headbar:hover {
+  animation: rainbow 2.5s ease-in-out;
+  animation-iteration-count: infinite;
+}
+/*Styling der Boxen die zu Unterseiten weiterleiten*/
 .linkboxen {
   border-radius: 5px;
   width: 40%;
   background-color: lightgrey;
   margin: 0 auto;
   padding: 10px;
-  text-overflow: ellipsis;
+  text-overflow: ellipsis; /*korrekter Textumbruch*/
   white-space: normal;
   overflow: hidden;
 }
-.headbar {
-  text-align: center;
-  width: 50%;
-  margin: 0 auto;
-}
-.headbar:hover {
-  animation: rainbow 2.5s ease-in-out;
-  animation-iteration-count: infinite;
-}
-
 .linkboxen:hover {
   border: 3px solid lightskyblue;
-  /* animation: backdarktextwhite 2s ease-in-out;
-  animation-fill-mode: forwards;
-  */
 }
-
-/*@keyframes backdarktextwhite {
-  0% {
-    background-color: lightgrey;
-    color: black;
-  }
-
-  100% {
-    color: white;
-    background-color: black;
-  }
-}
-*/
 
 .autor {
   border: 5px darkgray solid;
@@ -76,10 +61,11 @@ hr {
   left: 10;
   overflow: hidden;
 }
+/*Das Hinterlegete bild wird sichtbar gemacht. Das Bild befindet sich im normalzustand om Overflow des autor divs*/
 .autor:hover {
   overflow: visible;
 }
-
+/*Zugehörigen css classen (Rainbow)*/
 .rainbow {
   animation: rainbow 2.5s ease-in-out;
   animation-iteration-count: infinite;
@@ -88,7 +74,7 @@ hr {
   animation: rainbowbg 2.5s ease-in-out;
   animation-iteration-count: infinite;
 }
-
+/*Animation für Rainbow Schriftfarbe*/
 @keyframes rainbow {
   100%,
   0% {
@@ -128,7 +114,7 @@ hr {
     color: rgb(255, 0, 127);
   }
 }
-
+/*Animation für Rainbow Hintergrund*/
 @keyframes rainbowbg {
   100%,
   0% {
@@ -168,17 +154,17 @@ hr {
     background-color: rgb(255, 0, 127);
   }
 }
-
+/*Styling der List Elemente*/
 ul {
   text-align: left;
   padding: 10px;
   margin: 0px;
 }
-
+/*Die Zeile mit den Schlagwörter wird lightcoral dargestellt */
 p a {
   color: lightcoral;
 }
-
+/*Styling der Verwendeten Buttons*/
 a button {
   font-family: "Work Sans", sans-serif;
   margin-left: 20px;
@@ -200,4 +186,4 @@ a button:hover {
 }
 .funkybtn:hover {
   border: 2px solid gray;
-}
+} /*----------------------------------*/
