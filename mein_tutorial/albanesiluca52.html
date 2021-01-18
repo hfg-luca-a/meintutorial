@@ -3,27 +3,31 @@
   <head>
     <title>Luca Albanesi</title>
     <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Luca Albanesi" />
   </head>
   <body>
-  <h4>ID (#demo)</h4>
-	<div id="demo">Acess me by ID</div>		<!-- definition eines div mit ID "demo" -->	
-	<p> <button onclick="border()">Border</button> <!-- definition der buttons -->
-	<button onclick="background()">Background</button> </p>
-	<script>
-		// weist der variablen demoID das Element demo zu 
-		var demoID = document.getElementById("demo");
-		document.write("<br/>demo ID: "+demoID); // object HTMLDivElement
-		//deklaration funktionen
-		function border() 
-			{
-				demoID.style.border = "1px solid red";	// zeigt einen roten Ramen an
-			}
-		function background() 
-			{
-				demoID.style.background = "lightgreen";	// faerbt hintergrund gruen
-			}
-	</script>
-	<hr />
+    <h4>ID (#demo)</h4>
+    <div id="demo">Acess me by ID</div>
+    <!-- definition eines div mit ID "demo" -->
+    <p>
+      <button onclick="border()">Border</button>
+      <!-- definition der buttons -->
+      <button onclick="background()">Background</button>
+    </p>
+    <script>
+      // weist der variablen demoID das Element demo zu
+      var demoID = document.getElementById("demo");
+      document.write("<br/>demo ID: " + demoID); // object HTMLDivElement
+      //deklaration funktionen
+      function border() {
+        demoID.style.border = "1px solid red"; // zeigt einen roten Ramen an
+      }
+      function background() {
+        demoID.style.background = "lightgreen"; // faerbt hintergrund gruen
+      }
+    </script>
+    <hr />
     <a href="albanesiluca_index.html">Home</a>
   </body>
 </html>
