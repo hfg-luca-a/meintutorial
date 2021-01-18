@@ -5,18 +5,18 @@
     <meta charset="utf-8" />
     <meta name="author" content="Luca Albanesi" />
     <link rel="stylesheet" href="autor.css" type="text/css" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" /> <!--Einbinden von Fonts-->
     <link
       href="https://fonts.googleapis.com/css2?family=Work+Sans&display=swap"
       rel="stylesheet"
     />
   </head>
 
-  <body background="images\autorbg.png">
+  <body background="images\autorbg.png"> <!--Hintergrund des Bodys wird als Bild definiert-->
     <div class="header">
       <h1>Luca Albanesi</h1>
     </div>
-    <div class="map">
+    <div class="map"> <!--Einbinden des Wohnortes durch ein Iframe von Google Maps-->
       <iframe
         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d84102.23840553882!2d9.460170893788517!3d48.79725778347951!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4799ba6dc34e1d03%3A0x41ffd3c8d098f80!2sSchorndorf!5e0!3m2!1sde!2sde!4v1609258005234!5m2!1sde!2sde"
         width="50%"
@@ -36,19 +36,19 @@
          da ich einen hang zur Praxis habe.</p></div>
       <div class="boxedakt"><p>Vorkenntisse?</p><p>Wie gesagt Profilfach Informatik - also JA</p></div>
       <div class="hobbys boxedakt"><p>Hobbys?</p><p>Ich fliege sogenannte freestyle Drohnen, dient zur Aufnahme von Videomaterial.</p>
+        <!--Einbinden eines von mir gedrehten Videos durch ein vimeo Iframe--->
         <iframe class="vimeo" src="https://player.vimeo.com/video/501455327" width="640" height="360" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe></div>
     </div>
     <hr />
-    <div class="center">
+    <div class="center"> <!--Button der zurück zur Index Datei führt aber anders realisiert als üblich-->
       <button
        class="generalbtn"
        onclick="window.location.href='albanesiluca_index.html'">Home</button>
     </div>
     <div class="footer">
       <p>Email: luca@blumen-maechtlen.de | luca.albanesi@hfg-gmuend.de</p>
-      <p class="alignright">Datum: <span id="datum"></span></p>
+      <p class="alignright">Datum: <span id="datum"></span></p> <!--Span wird durch js beschrieben und bekommt den aktuellen Zeitpunkt-->
     </div>
-    
     <script src="autor.js"></script>
   </body>
 </html>
