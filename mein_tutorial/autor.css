@@ -32,7 +32,6 @@ body {
   width: 100%;
 }
 .aktivities {
-
   width: 50%;
   margin: 0 auto;
   background-color: white;
@@ -86,4 +85,15 @@ hr {
 .vimeo {
   border-radius: 5px;
   width: 100%;
+}
+.footer {
+  margin-top: 50px;
+  text-align: center;
+  font-family: "Work Sans", sans-serif;
+  font-size: 13px;
+
+}
+.footer p {
+  display: inline;
+  margin: 10px
 }
