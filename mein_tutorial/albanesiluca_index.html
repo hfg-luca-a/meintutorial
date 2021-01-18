@@ -9,8 +9,8 @@
       name="description"
       content="In diesem Tutorial sind alle Semster Aufgaben und Uebungen aus dem 1 Semster Webtechnologien IoT luca-albanesi enthalten."
     />
-    <link rel="stylesheet" href="styleindex.css" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link rel="stylesheet" href="styleindex.css" /> <!--link zur css datei -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" /> <!--einbindung der Fonts-->
     <link
       href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
       rel="stylesheet"
@@ -20,18 +20,19 @@
       href="https://fonts.googleapis.com/css2?family=Work+Sans&display=swap"
       rel="stylesheet"
     />
+    <!--Einbindung von JQuery libary hilfreich für die get funky methode-->
     <script
       src="https://code.jquery.com/jquery-3.5.1.min.js"
       integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0="
       crossorigin="anonymous"
-    ></script>
+    ></script> 
   </head>
   <body>
     <div class="headbar">
       <h1>Dies ist die Index Datei von Luca's tutorial</h1>
     </div>
     <hr />
-    <div class="autor">
+    <div class="autor"> <!--side box die immer an fester Position bleibt  & zum Autor führt-->
       <p>
         Hier gehts zum Autor
         <a href="albanesiluca_info01.html"
@@ -43,7 +44,7 @@
         alt="Bild des Autors"
       />
     </div>
-    <div class="linkboxen">
+    <div class="linkboxen"> <!--Ab hier auflistung aller Datein mit Datum mit Schlagwörtern-->
       <ul>
         14.10.2020:
       </ul>
@@ -342,32 +343,31 @@
         </p>
       </ul>
     </div>
-    <button class="funkybtn" onclick="enableFunk()">Get Funky</button>
+    <button class="funkybtn" onclick="enableFunk()">Get Funky</button> <!--Ein kleines "Easter Egg" wenn man das so nennen möchte | aktiviert enableFunk()-->
 
     <script>
-      function enableFunk() {
+      function enableFunk() {       // da alle Elemente theoretisch die gleiche Animation bekommt starte ich diese Animation Zeitversetzt
         $("body").addClass("rainbowbg");
         setTimeout(function () {
-          // Code, der erst nach 2 Sekunden ausgeführt wird
           $(".linkboxen").addClass("rainbowbg");
         }, 500);
+
         setTimeout(function () {
-          // Code, der erst nach 2 Sekunden ausgeführt wird
           $("button").addClass("rainbowbg");
         }, 1000);
+
         setTimeout(function () {
-          // Code, der erst nach 2 Sekunden ausgeführt wird
           $(".autor").addClass("rainbowbg");
         }, 1000);
+
         setTimeout(function () {
-          // Code, der erst nach 2 Sekunden ausgeführt wird
           $("h1").addClass("rainbow");
         }, 1000);
+
         setTimeout(function () {
-          // Code, der erst nach 2 Sekunden ausgeführt wird
           $("p").addClass("rainbow");
         }, 1000);
-        console.log("did it");
+        console.log("Enabled FUNK");
       }
     </script>
   </body>
