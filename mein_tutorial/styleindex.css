@@ -52,7 +52,8 @@ hr {
 }
 
 .autor {
-  border: 5px darkgray solid;
+  border: 2px darkgray solid;
+  border-radius: 5px;
   text-align: center;
   background-color: lightgrey;
   width: 200px;
