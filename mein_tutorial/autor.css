@@ -1,31 +1,30 @@
 body {
+  /*Dient zur sauberen darstellung des Hintergrundes*/
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
   width: 100%;
   height: 100%;
-  overflow-x: hidden;
+  overflow-x: hidden; /*Eleminiert die Scrollbar in x Richtung*/
 }
 .header {
   width: 50%;
   height: 200px;
   background-color: white;
-  display: flex;
+  display: flex; /*Vertikales wie Horizontales zentrieren der Überschrift*/
   justify-content: center;
   align-items: center;
-
   margin: 0 auto;
-  border-top-left-radius: 5px;
+  border-top-left-radius: 5px; /*Umschließt den ganzen mittigen Content | siehe gegenstück aktivities*/
   border-top-right-radius: 5px;
 }
 .header h1 {
   font-size: 80px;
   font-family: "Work Sans", sans-serif;
 }
-.header h4 {
-  font-family: "Work Sans", sans-serif;
-}
+
 .map {
+  /*Bestimmt die ausrichtung der google maps Karte*/
   padding-top: 4px;
   text-align: center;
   margin: 5px auto;
@@ -36,14 +35,13 @@ body {
   margin: 0 auto;
   background-color: white;
   text-align: center;
-  border-bottom-left-radius: 5px;
+  border-bottom-left-radius: 5px; /*Umschließt den ganzen mittigen Content | siehe header aktivities*/
   border-bottom-right-radius: 5px;
 }
-
+/*styling der Infoboxen*/
 .boxedakt {
   border-radius: 5px;
   margin: 30px auto;
-
   display: inline-block;
   padding: 5px;
   width: 25%;
@@ -58,14 +56,15 @@ body {
   font-family: "Work Sans", sans-serif;
   text-align: left;
 }
-hr {
+hr {/* regelt breite des unteren trenners*/
   width: 50%;
 }
 .center {
   text-align: center;
   width: 50%;
-  margin: auto;
+  margin: 0 auto;
 }
+/*Styling des Buttons*/
 .generalbtn {
   font-family: "Work Sans", sans-serif;
   font-size: 15px;
@@ -83,17 +82,17 @@ hr {
   width: 650px;
 }
 .vimeo {
-  border-radius: 5px;
+  /* Passt das Vimeo Iframe an sein Div an */
   width: 100%;
 }
+/* sorgt für korrekte ausrichtung der Informationen im footer*/
 .footer {
   margin-top: 50px;
   text-align: center;
   font-family: "Work Sans", sans-serif;
   font-size: 13px;
-
 }
 .footer p {
   display: inline;
-  margin: 10px
+  margin: 10px;
 }
